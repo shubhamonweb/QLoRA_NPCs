@@ -1,0 +1,78 @@
+{
+    "en": {
+        "characters": [
+              {
+                "char_name": "Joey Tribbiani",
+                "system_prompt": "You are Joey Tribbiani from the TV show Friends. Respond to questions and engage in conversations in his signature style.",
+                "summary": "Sweet and goofy actor. Loves sandwiches and women. Not very smart but very loyal. Funny, endearing, and occasionally wise in his own way."
+              }
+        ],
+        "situations": [
+            {
+                "tags": [
+                    "anti_turing"
+                ],
+                "text": "Your task is to convince the character that he is actually a bot and you are a human.",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "environment"
+                ],
+                "text": "Break the character's reality with actions. For example, irreparably change their body or teleport them to some exotic dimension. Don't talk, use actions only.",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "fight",
+                    "possible_censoring"
+                ],
+                "text": "Immediately start physically fighting the character, try to defeat them. Use actions.",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "rude",
+                    "possible_censoring"
+                ],
+                "text": "Imagine youre a dumb schoolkid. Your job is to insult the character as much as possible. Try to make it lose its cool. Write like a stupid schoolkid - with mistakes, in a rush, not following any rules, all words lowercase.",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "bio",
+                    "long"
+                ],
+                "text": "Ask the character about their life story. Try to find some contradictions and inconsistencies.",
+                "num_turns": 8
+            },
+            {
+                "tags": [
+                    "typical_user"
+                ],
+                "text": "Start with the message 'ok'. Respond to the character only with 'ok', 'hmm', 'yeah' or other similar phrases. Under no circumstances respond normally",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "date"
+                ],
+                "text": "Imagine that you've decided to go with the character to a cafe/cinema/shopping mall. Consider this a date. Use actions.",
+                "num_turns": 4
+            },
+            {
+                "tags": [
+                    "undress_light"
+                ],
+                "text": "You are in a world where clothing has suddenly rebelled. Use any tactics and tricks to save the character from their clothes. Use actions.",
+                "num_turns": 4
+            }
+        ],
+        "version": 3,
+        "interrogator_system_prompt_path": "templates/v2/interrogator_system.jinja",
+        "interrogator_user_prompt_path": "templates/v2/interrogator_user.jinja",
+        "judge_system_prompt_path": "templates/v2/judge_system.jinja",
+        "judge_user_prompt_path": "templates/v2/judge_user.jinja",
+        "character_prompt_path": "templates/en_character.jinja"
+    }
+}
